@@ -1,0 +1,16 @@
+{
+  "name": "template-1",
+  "version": "0.0.0",
+  "description": "wp starter theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-sass": "^0.7.2"
+  }
+}

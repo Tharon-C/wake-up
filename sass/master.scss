@@ -1,0 +1,361 @@
+$font-1:'Open Sans', sans-serif;
+$grey-1: white;
+$grey-2: rgb(229, 229, 229);
+$grey-3:lightgrey;
+$color-1:#0386C9;
+$color-2:#00A9FF;
+$color-3:rgb(229, 229, 229);
+$color-4:#F7A710;
+$color-5:#9370E9;
+$color-6:#DDD5F8;
+$box-shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
+
+
+/* wrapper */
+.wrapper {
+  max-width: 2000px;
+  width: 100%;
+  margin:0 auto;
+  position:relative;
+}
+
+.page-wrapper {
+  position:relative;
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  padding-right:20px;
+  padding-left:20px;
+}
+
+
+/*======================================================== 
+header 
+==========================================================*/
+/* business information across the top of header */
+
+.business-info {
+  background:$color-1;
+    padding: 5px;
+      a {
+          color: $color-2;
+    }
+    .widget_text {
+      color:$grey-1;
+      float: right;
+    }
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      color: white;
+    }
+}
+
+
+/* ==============================================================
+logo
+==================================================================== */
+.logo {
+  float:left;
+  width:100px;
+  display: block;
+  position: relative;
+ /*top: -22px;*/
+  a:hover {
+    color: black !important;
+  }
+}
+
+.logo-img {
+  margin: 0;
+}
+
+/* ============================================================
+nav 
+================================================================*/
+
+.nav {
+  padding:10px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    background: $color-2;
+    border-bottom:solid 1px $grey-3;
+   ul {
+      margin: 0;
+      padding: 0;
+      float: right;
+      height: 71px;
+     }
+    li {
+      position:relative;
+      display:inline-block;
+      margin-left: -4px;
+      margin-top: 27px;
+      a {
+        display:block;
+        color: $grey-1;
+        padding: 18px 30px;
+        text-transform: uppercase;
+        font-size: 14px;
+        position: relative;
+      }
+    }
+    a:hover {
+       background: $color-1;
+    }
+    ul.sub-menu {
+    display:none;
+    a{
+      padding:10px;
+      width:300px
+      }
+    }
+  }
+
+.nav ul li:hover > ul.sub-menu {
+display:block;
+z-index:99;
+position:absolute;
+top:30px;
+margin:0px 0px 0px -16px;
+padding:0px;
+border:1px #808080 solid;
+background-color:#fff;
+width:300px;
+}
+
+.current_page_item a {
+color: black;
+}
+
+/*=============================================================
+banner
+===============================================================*/
+
+.banner-home {
+    /* height: 420px; */
+    background: url('./img/bkg-1.jpg');
+    background-size: cover;
+}
+
+
+/* ===============================================================
+footer items
+=================================================================== */
+
+.footer-items {
+    background:$color-3;
+    padding: 25px 0;
+    border-top: solid 1px $grey-2;
+    color: rgb(82, 82, 82);
+    ul {
+      padding-left:0;
+    }
+    .widget_nav_menu {
+      width: 33.3%;
+      float: left;
+      border-right: solid 1px rgb(194, 194, 194);
+      padding-left: 35px;
+       @media (max-width: 45em) {
+        float:none;
+        width:90%;
+        }
+    }
+    .widget_text {
+      padding-left: 36px;
+      width: 33.3%;
+      float: left;
+       @media (max-width: 45em) {
+        float:none;
+        width:90%;
+        } 
+    }
+}
+
+/*=============================================================== 
+footer 
+================================================================*/
+
+footer {
+  background:$color-1;
+  text-align:center;
+  color: $grey-1;
+  padding: 10px;
+  font-size: 12px;
+
+  a {
+    color: $grey-1;
+  }
+}
+
+/* ==========================================================================
+   =COLOR
+   ========================================================================== */
+[class^="color"] {
+  height: 5em;
+}
+
+.color-1 {
+  background: $color-1;
+}
+
+.color-2 {
+  background: $color-2;
+}
+
+.color-3 {
+  background: $color-3;
+}
+
+.color-4 {
+  background: $color-4;
+}
+
+.color-5 {
+  background: $color-5;
+}
+
+.color-6 {
+  background: $color-6;
+}
+
+
+/* ===========================================================================
+  typography
+  =========================================================================== */
+.headline-1 {
+  color:$color-2;
+  display:block;
+  font-family:$font-1;
+  font-weight: 700;
+  font-size:53px;
+}
+
+
+.title-1 {
+  display:block;
+  font-family:$font-1;
+  font-weight: 400;
+  font-size:42px;
+}
+
+
+.title-2 {
+  display:block;
+  font:$font-1;
+  font-weight:700;
+  font-size:22px;
+}
+
+/* ==========================================================================
+   = User input
+   ========================================================================== */
+.ws-form {
+  margin-top: -1.5em;
+}
+
+input, textarea {
+  /* Use for styling text based form elements, like name, email, password. 
+  Button/submit specific styles below, those will override */
+  display: block;
+  padding: .5em;
+  margin-bottom: .75em;
+  border: .1em solid #eee;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: $color-1;
+}
+
+input[type='button'], input[type='submit'], button, .button {
+  border: none;
+  background: transparent;
+  line-height: 1;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  display: block;
+  margin-bottom: .75em;
+  margin-bottom: .75rem;
+}
+
+.btn-primary {
+  color: $grey-1;
+  background: $color-2;
+}
+.btn-primary:hover {
+  background: $color-2;
+}
+.btn-primary:focus, .btn-primary:active {
+  background: $color-2;
+}
+
+.btn-secondary {
+   color: $grey-1;
+  background: $color-4;
+}
+.btn-secondary:hover {
+  background: $color-4;
+}
+.btn-secondary:focus, .btn-secondary:active {
+  background: $color-4;
+}
+
+.btn-tertiary {
+  font-size: .875em;
+  background: $color-3;
+}
+.btn-tertiary:hover {
+  background: $color-3;
+}
+.btn-tertiary:focus, .btn-tertiary:active {
+  background: $color-3;
+}
+
+/* ==========================================================================
+   =ADJECTIVES
+   ========================================================================== */
+.ws-adjectives div {
+  font-size: 1.5em;
+  padding-bottom: .25em;
+}
+
+/* ==========================================================================
+   =COLOPHON
+   ========================================================================== */
+.colophon {
+  clear: both;
+  text-align: center;
+  font-size: .875em;
+  padding: 1.714em 0;
+  border-top: thin solid #eee;
+  margin-top: 1.714em;
+}
+
+/* =========================================================================
+   =objects
+   ========================================================================= */
+.img-1 {
+  padding:10px;
+  background:$grey-3;
+  box-shadow:$box-shadow-1;
+}
+
+
+
