@@ -5,5 +5,5 @@ A Template using [HTML5 Blank](http://html5blank.com/) with a simple grid system
 ##Some Basic Features
 * Preprocessing with Gulp and SASS
 * Short codes for making links and images more portable.
-* Added Jquery for quickly creating resonsive Tabs.
+* Added jQuery for quickly creating resonsive Tabs & other fun stuff.
 
