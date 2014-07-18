@@ -25,13 +25,13 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+		<div class="wrapper clear">
 
 			<!-- header -->
 			<header class="header clear" role="banner">
                 <div class="business-info clear">
                     
-                    <div class="page-wrapper">
+                    <div class="page-wrapper clear">
                     <?php dynamic_sidebar('widget-area-2'); ?>
 					
                      </div>
@@ -42,7 +42,7 @@
 					<!-- nav -->
 					<nav class="nav clear" role="navigation">
     
-                        <div class="page-wrapper">    
+                        <div class="page-wrapper clear">    
                         <!-- logo -->
 				    <div class="logo">
 						<a href="<?php echo home_url(); ?>">

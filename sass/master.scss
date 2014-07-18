@@ -57,10 +57,10 @@ logo
 ==================================================================== */
 .logo {
   float:left;
-  width:100px;
+  width:150px;
   display: block;
   position: relative;
- /*top: -22px;*/
+  padding:10px;
   a:hover {
     color: black !important;
   }
@@ -74,8 +74,9 @@ logo
 nav 
 ================================================================*/
 
+
 .nav {
-  padding:10px;
+  padding:0;
     display: block;
     position: relative;
     z-index: 10;
@@ -85,13 +86,14 @@ nav
       margin: 0;
       padding: 0;
       float: right;
-      height: 71px;
+      position:absolute;
+      right:0;
+      bottom:0;
      }
     li {
       position:relative;
       display:inline-block;
       margin-left: -4px;
-      margin-top: 27px;
       a {
         display:block;
         color: $grey-1;
