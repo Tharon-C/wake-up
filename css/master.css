@@ -1,11 +1,38 @@
+.quote {
+  background: #F2F2F2;
+  padding: 10px;
+  float: right;
+  font-size: 2em;
+  font-style: italics; }
+
+.hide {
+  display: none; }
+
+dd {
+  margin: 0;
+  padding: 1em 0 1em 20px; }
+
+dt {
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: bold;
+  background: #F2F2F2;
+  border-bottom: solid lightgrey 1px;
+  border-top: solid white 1px; }
+
+dt:nth-last-child(2) {
+  border-bottom: none; }
+
 /* wrapper */
-.wrapper {
+.wrapper, .wrap {
   max-width: 2000px;
   width: 100%;
   margin: 0 auto;
   position: relative; }
 
-.page-wrapper {
+.page-wrapper, .p-wrap {
   position: relative;
   margin: auto;
   max-width: 1200px;
@@ -109,7 +136,7 @@ footer items
 .footer-items {
   background: #e5e5e5;
   padding: 25px 0;
-  border-top: solid 1px #e5e5e5;
+  border-top: solid 1px #F2F2F2;
   color: #525252; }
   .footer-items ul {
     padding-left: 0; }
