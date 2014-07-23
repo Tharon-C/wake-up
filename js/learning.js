@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
   
   $('dd')/*.filter(':nth-child(n+4)')*/.addClass('hide');
   
-  $('dl').on('mouseenter','dt', function() {
+  $('dl').on('click','dt', function() {
   	$(this)
   	.next()
   		 .slideDown(200)
@@ -20,10 +20,10 @@ jQuery(document).ready(function($) {
 
   	$('<blockquote></blockquote>', {
   		class: 'quote',
-  		text: $this.text()
-  	}).prependTo( $this.closest('p') );
-  	
+  		text: 'dkflskkkfkskff'
+        	}).prependTo( $this.closest('p') );
   });
+
 });	
 
 
