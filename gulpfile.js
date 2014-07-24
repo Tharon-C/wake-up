@@ -13,10 +13,11 @@ gulp.task('style', function() {
 
 // default gulp watch task 
 gulp.task('default', function() {
-	var client = ['style'];
-    var server = refresh();
-	gulp.watch (['./sass/*.scss' , '*.php'] , client)
-    gulp.watch ('./js/*.js').on('change' , function(file) {
+	var client = ['style'],
+        server = refresh();
+        
+	gulp.watch ('./sass/*.scss' , client)
+    gulp.watch (['./js/*.js', './*.php']).on('change' , function(file) {
         server.changed(file.path);
     });
 });

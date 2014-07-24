@@ -33,10 +33,9 @@
                     
                     <div class="page-wrapper clear">
                     <?php dynamic_sidebar('widget-area-2'); ?>
-					
-                     </div>
+					</div>
                     
-                    </div>
+                </div>
 
 
 					<!-- nav -->

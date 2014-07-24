@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 
   	$('<blockquote></blockquote>', {
   		class: 'quote',
-  		text: 'dkflskkkfkskff'
+  		text: $this.text()
         	}).prependTo( $this.closest('p') );
   });
 
