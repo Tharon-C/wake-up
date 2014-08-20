@@ -29,10 +29,10 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-                <div class="business-info clear">
+                <div class="business-info section-top clear">
                     
                     <div class="page-wrapper">
-                    <?php dynamic_sidebar('widget-area-2'); ?>
+                    <?php dynamic_sidebar('widget-area-1'); ?>
 					
                      </div>
                     
@@ -42,7 +42,7 @@
 					<!-- nav -->
 					<nav class="nav int-nav clear" role="navigation">
     
-                        <div class="wood-border">    
+                         
                         <!-- logo -->
 				    <div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -51,7 +51,7 @@
 						</a>
                     </div>
 					<!-- /logo -->
-                            </div>
+                           
                             <?php  add_custom_nav_menu('menu-1'); ?>
                 
 					</nav>

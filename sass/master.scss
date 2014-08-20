@@ -10,36 +10,7 @@ $color-5:#9370E9;
 $color-6:#DDD5F8;
 $box-shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
 
-//playing with jquery
-.quote {
-  background:$grey-2;
-  padding:10px; 
-  float:right;
-  font-size:2em;
-  font-style:italics;
-}
 
-.hide {
-  display:none;
-}
-
-dd {
-  margin:0;
-  padding:1em 0 1em 20px; 
-}
-
-dt {
-  padding-left:20px;
-  cursor:pointer;
-  font-size: 1.5em;
-  line-height: 2em;
-  font-weight:bold;
-  background:$grey-2;
-  border-bottom:solid lightgrey 1px;
-  border-top:solid white 1px;
-}
-
-dt:nth-last-child(2) {border-bottom:none;}
 
 /* wrapper */
 .wrapper, .wrap {

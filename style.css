@@ -45,7 +45,7 @@ ul li {line-height: 160%;list-style:none;}
 
 article li {margin-bottom: 20px;}
 
-img {display:block;max-width: 100%;vertical-align:bottom;}
+img {display:block;width:100%;vertical-align:bottom;}
 
 /*helper classes*/
 .inlineblk{display:inline-block;}
@@ -55,16 +55,23 @@ img {display:block;max-width: 100%;vertical-align:bottom;}
 .txt-c {text-align:center;display: block;}
 .txt-r {text-align:right;}
 .txt-l {text-align:left;}
+.txt-wht {color:white;}
 .pad-5px {padding:5px;}
 .pad-10px {padding:10px;}
 .pad-20px {padding:20px;}
 .pad-30px {padding:30px;}
+.pad-40px {padding:40px;}
+.pad-50px {padding:50px;}
 .pad-r-10px {padding-right:10px;}
 .pad-r-20px {padding-right:20px;}
 .pad-r-30px {padding-right:30px;}
+.pad-r-40px {padding-right:40px;}
+.pad-r-50px {padding-right:50px;}
 .pad-l-10px {padding-left:10px;}
 .pad-l-20px {padding-left:20px;}
 .pad-l-30px {padding-left:30px;}
+.pad-l-40px {padding-left:40px;}
+.pad-l-50px {padding-left:50px;}
 .pad-s-5px {padding-right:5px;padding-left:5px;}
 .pad-s-10px {padding-right:10px;padding-left:10px;}
 .pad-s-20px {padding-right:20px;padding-left:20px;}
@@ -73,10 +80,13 @@ img {display:block;max-width: 100%;vertical-align:bottom;}
 .pad-t-10px {padding-top:10px;}
 .pad-t-20px {padding-top:20px;}
 .pad-t-30px {padding-top:30px;}
+.pad-t-40px {padding-top:40px;}
 .pad-t-50px {padding-top:50px;}
 .pad-b-15px {padding-bottom:15px;}
 .pad-b-30px {padding-bottom:30px;}
-.pad-b-50px {padding-bottom:30px;}
+.pad-b-40px {padding-bottom:40px;}
+.pad-b-50px {padding-bottom:50px;}
+.pad-b-75px {padding-bottom:60px;}
 .pad-b-100px {padding-bottom:30px;}
 .pad-tb-20px {padding-top:20px;padding-bottom:20px;}
 .pad-tb-30px {padding-top:30px;padding-bottom:30px;}
@@ -86,7 +96,7 @@ img {display:block;max-width: 100%;vertical-align:bottom;}
 .marg-l-10px {margin-left:10px;}
 .marg-l-20px {margin-left:20px;}
 .marg-l-30px {margin-left:30px;}
-.marg-b-20px{margin-bottom:10px}
+.marg-b-10px{margin-bottom:10px}
 .marg-b-20px{margin-bottom:20px}
 .marg-b-30px{margin-bottom:30px}
 .marg-b-50px{margin-bottom:50px}

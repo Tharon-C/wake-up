@@ -29,10 +29,10 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-                <div class="business-info clear">
+                <div class="business-info section-top clear">
                     
                     <div class="page-wrapper clear">
-                    <?php dynamic_sidebar('widget-area-2'); ?>
+                    <?php dynamic_sidebar('widget-area-1'); ?>
 					</div>
                     
                 </div>

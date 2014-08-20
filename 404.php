@@ -5,11 +5,11 @@
 		<section>
 
 			<!-- article -->
-			<article id="post-404">
+			<article class="page-wrapper p-c" id="post-404">
 
-				<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
+				<h1>Oops! We don't know what page You're Looking for</h1>
 				<h2>
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
+					Would you like to<a href="<?php echo home_url(); ?>">return home?</a>
 				</h2>
 
 			</article>
