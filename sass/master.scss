@@ -1,22 +1,31 @@
-$font-1:'Open Sans', sans-serif;
+$font-1:'Rokkitt', serif;
+$font-2:'Open Sans', helvetica, arial;
+$font-3:'Oswald', 'Open Sans', helvetica, arial;
 $grey-1: white;
 $grey-2: #F2F2F2;
 $grey-3:lightgrey;
-$color-1:#0386C9;
-$color-2:#00A9FF;
-$color-3:rgb(229, 229, 229);
-$color-4:#F7A710;
-$color-5:#9370E9;
-$color-6:#DDD5F8;
-$box-shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
+$color-1:linear-gradient(to bottom, #fafafb 0%,#ced8fe 100%);
+$color-2:linear-gradient(to bottom, #5f5f5f 0%,#000000 38%,#000000 38%);
+$color-3:#AE2222;
+$color-4:#CED8FE;
+$color-5:#7C90A4;
+$color-6:#F1EABF;
+$border-1: .1em solid #CBCBCB;
+$shadow-1:1px 1px 2px rgba(0, 0, 0, 0.41);
 
+body {
+  background:black;
+}
 
+a {
+  color:$color-3;
+}
 
 /* wrapper */
 .wrapper, .wrap {
-  max-width: 2000px;
+  background:white;
   width: 100%;
-  margin:0 auto;
+  margin:0 auto -20px;
   position:relative;
 }
 
@@ -36,14 +45,11 @@ header
 /* business information across the top of header */
 
 .business-info {
-  background:$color-1;
+  position:relative;
+  background:$grey-1;
     padding: 5px;
       a {
           color: $color-2;
-    }
-    .widget_text {
-      color:$grey-1;
-      float: right;
     }
     li {
       display: inline-block;
@@ -57,10 +63,9 @@ header
 logo
 ==================================================================== */
 .logo {
-  float:left;
-  width:150px;
+  margin:auto;
+  width:250px;
   display: block;
-  position: relative;
   padding:10px;
   a:hover {
     color: black !important;
@@ -77,35 +82,33 @@ nav
 
 
 .nav {
-  padding:0;
+    padding:0;
     display: block;
     position: relative;
     z-index: 10;
     background: $color-2;
-    border-bottom:solid 1px $grey-3;
+    box-shadow:$shadow-1;
    ul {
-      margin: 0;
+      margin: auto;
       padding: 0;
-      float: right;
-      position:absolute;
-      right:0;
-      bottom:0;
+      display:table;
      }
     li {
+      float:right;
       position:relative;
-      display:inline-block;
+      display:table;
       margin-left: -4px;
       a {
         display:block;
         color: $grey-1;
-        padding: 18px 30px;
+        padding: 14px 20px;
         text-transform: uppercase;
         font-size: 14px;
         position: relative;
       }
     }
     a:hover {
-       background: $color-1;
+       background: #333333;
     }
     ul.sub-menu {
     display:none;
@@ -136,10 +139,41 @@ color: black;
 banner
 ===============================================================*/
 
-.banner-home {
-    /* height: 420px; */
-    background: url('./img/bkg-1.jpg');
-    background-size: cover;
+.banner {
+  background:url('../img/banner-1-bkg.png') no-repeat 65px 0, $color-1;
+height: 400px;
+}
+
+.banner-img {
+width: 67%;
+float: right;
+position: absolute;
+top: 109px;
+left: 380px;
+}
+
+.banner-txt-1 {
+  position:absolute;
+  top:33px;
+  left:400px;
+}
+
+
+.banner-txt-1 .line-1 {
+  line-height: 1em;
+  font-family:$font-3;
+  font-weight: 800;
+font-size:66px;
+text-transform:uppercase;
+}
+
+.banner-txt-1 .line-2 {
+  line-height: 1em;
+  color:$color-3;
+  font-family:$font-1;
+  font-weight: 800;
+font-size:22px;
+text-transform:uppercase;
 }
 
 
@@ -148,7 +182,7 @@ footer items
 =================================================================== */
 
 .footer-items {
-    background:$color-3;
+    background:#151515;
     padding: 25px 0;
     border-top: solid 1px $grey-2;
     color: rgb(82, 82, 82);
@@ -181,14 +215,14 @@ footer
 ================================================================*/
 
 footer {
-  background:$color-1;
+  background:black;
   text-align:center;
   color: $grey-1;
   padding: 10px;
   font-size: 12px;
 
   a {
-    color: $grey-1;
+    color: $color-3;
   }
 }
 
@@ -227,28 +261,79 @@ footer {
 /* ===========================================================================
   typography
   =========================================================================== */
+
+
+
+
 .headline-1 {
-  color:$color-2;
+  z-index:2;
+  margin-left:-24px;
+  padding:5px 24px;
+  text-transform: uppercase;
+  color:white;
   display:block;
-  font-family:$font-1;
-  font-weight: 700;
-  font-size:53px;
+  font-family:$font-3;
+  font-weight: 300;
+  font-size:18px;
+  background:$color-2;
+  box-shadow:$shadow-1;
 }
 
+.headline-1:before {
+  z-index: 1;
+  content:"";
+  height:49px;
+  position:absolute;
+  margin-left:-24px;
+  width:24px;
+  background:url('../img/headline-fold.png') no-repeat -1px 31px;
+}
 
 .title-1 {
   display:block;
+  color:$color-3;
   font-family:$font-1;
   font-weight: 400;
-  font-size:42px;
+  font-size:32px;
 }
 
 
 .title-2 {
   display:block;
-  font:$font-1;
+  font-family:$font-1;
   font-weight:700;
   font-size:22px;
+}
+
+.title-3 {
+  display:block;
+  font-family:$font-1;
+  font-weight:700;
+  font-size:18px;
+}
+
+.social-face {
+  display: block;
+  font-size:20px;
+  border-radius: 900px;
+  background:#16659B;
+  padding:10px 15px;
+}
+
+.social-twit {
+  display:block;
+  font-size:20px;
+  border-radius: 900px;
+  background:#77CAEF;
+  padding:10px 11px;
+}
+
+.social-tube {
+  display:block;
+  font-size:20px;
+  border-radius: 900px;
+  background:#E8634A;
+  padding:10px;
 }
 
 /* ==========================================================================
@@ -264,7 +349,7 @@ input, textarea {
   display: block;
   padding: .5em;
   margin-bottom: .75em;
-  border: .1em solid #eee;
+  border: $border-1;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -298,36 +383,36 @@ input[type='button'], input[type='submit'], button, .button {
   margin-bottom: .75rem;
 }
 
-.btn-primary {
+.btn-1 {
   color: $grey-1;
-  background: $color-2;
+  background: $color-3;
 }
-.btn-primary:hover {
-  background: $color-2;
+.btn-1:hover {
+  background: #6F1616;
 }
-.btn-primary:focus, .btn-primary:active {
+.btn-1:focus, .btn-primary:active {
   background: $color-2;
 }
 
-.btn-secondary {
-   color: $grey-1;
+.btn-2 {
+   color: black;
   background: $color-4;
 }
-.btn-secondary:hover {
+.btn-2:hover {
   background: $color-4;
 }
-.btn-secondary:focus, .btn-secondary:active {
+.btn-2:focus, .btn-secondary:active {
   background: $color-4;
 }
 
-.btn-tertiary {
+.btn-3 {
   font-size: .875em;
+  border:$border-1;
+}
+.btn-3:hover {
   background: $color-3;
 }
-.btn-tertiary:hover {
-  background: $color-3;
-}
-.btn-tertiary:focus, .btn-tertiary:active {
+.btn-3:focus, .btn-tertiary:active {
   background: $color-3;
 }
 
@@ -357,7 +442,7 @@ input[type='button'], input[type='submit'], button, .button {
 .img-1 {
   padding:10px;
   background:$grey-3;
-  box-shadow:$box-shadow-1;
+  box-shadow:$shadow-1;
 }
 
 

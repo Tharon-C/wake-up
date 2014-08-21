@@ -2,7 +2,10 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+	<div class="page-wrapper">	
+
+		<section class="col-3-4 p-l">
+
             <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
@@ -33,6 +36,10 @@
 
 		</section>
 		<!-- /section -->
+		<aside class="col-1-4 p-r">
+			<?php dynamic_sidebar('sidebar-1'); ?>
+		</aside>
+	</div>
 	</main>
 
 <?php get_footer(); ?>

@@ -33,11 +33,14 @@ function load_fonts() {
             wp_register_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700');
             wp_enqueue_style( 'open-sans');
       
-    wp_register_style('quicksand', 'http://fonts.googleapis.com/css?family=Quicksand:400,700');
+            wp_register_style('quicksand', 'http://fonts.googleapis.com/css?family=Quicksand:400,700');
             wp_enqueue_style( 'quicksand');
     
-     wp_register_style('font-awsome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+            wp_register_style('font-awsome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
             wp_enqueue_style( 'font-awsome');
+
+            wp_register_style('rokkitt', 'http://fonts.googleapis.com/css?family=Rokkitt:400,700');
+            wp_enqueue_style( 'rokkitt');
         }
 
  
@@ -219,27 +222,39 @@ function add_slug_to_body_class($classes)
 // If Dynamic Sidebar Exists
 if (function_exists('register_sidebar'))
 {
-    // Define Sidebar Widget Area 1
+    // Define Sidebar Top Left
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
+        'name' => __('top-l', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
+        'id' => 'top-l',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="title-2">',
         'after_title' => '</h3>'
     ));
 
-    // Define Sidebar Widget Area 2
+    // Define Sidebar Top Right
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
+        'name' => __('top-r', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-2',
+        'id' => 'top-r',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+
+     // Define Sidebar 1
+    register_sidebar(array(
+        'name' => __('sidebar-1', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'sidebar-1',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
 
 }
 

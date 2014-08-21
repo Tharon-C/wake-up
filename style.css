@@ -1,5 +1,5 @@
 /*
-	Theme Name: Template 1
+	Theme Name: Wake Up Tucson
 	Theme URI: 
 	Description: A Dreamy Template Full of Floats
 	Author: Tharon Carlson
@@ -167,33 +167,33 @@ img {display:block;width:100%;vertical-align:bottom;}
 .col-5-6 {width: 83.333333%;}
 /* L stands for large. L styles get triggered at 60em, that is, 960px */
 @media (max-width: 60em) {
-  .l-1-2, .l-2-4, .l-3-6 {width: 50%;}
-  .l-1-3, .l-2-6 {width: 33.333333%;}
-  .l-2-3, .l-4-5 {width: 66.666666%;}
-  .l-1-4 {width: 25%;}
-  .l-3-4 {width: 75%;}
-  .l-1-5 {width: 20%;}
-  .l-2-5 {width: 40%;}
-  .l-3-5 {width: 60%;}
-  .l-4-5 {width: 80%;}
-  .l-1-6 {width: 16.666666%;}
-  .l-5-6 {width: 83.333333%;}
-  .hide-l-and-below {display: none;visibility: hidden;}
-  .show-l-and-below {display: block;visibility: visible;}
+  .col-l-1-2, .l-2-4, .l-3-6 {width: 50%;}
+  .col-l-1-3, .l-2-6 {width: 33.333333%;}
+  .col-l-2-3, .l-4-5 {width: 66.666666%;}
+  .col-l-1-4 {width: 25%;}
+  .col-l-3-4 {width: 75%;}
+  .col-l-1-5 {width: 20%;}
+  .col-l-2-5 {width: 40%;}
+  .col-l-3-5 {width: 60%;}
+  .col-l-4-5 {width: 80%;}
+  .col-l-1-6 {width: 16.666666%;}
+  .col-l-5-6 {width: 83.333333%;}
+  .col-hide-l-and-below {display: none;visibility: hidden;}
+  .col-show-l-and-below {display: block;visibility: visible;}
 }
 @media (max-width: 60em) and (min-width: 45em) {
   .hide-on-l {display: none;visibility: hidden;}
 .show-on-l {display: block;visibility: visible;}
 /* M stands for medium. M styles get triggered at 45em, that is, 720px */
 @media (max-width: 45em) {
-  .m-full {width: 100%;}
-  .m-1-2, .m-2-4 {width: 50%;}
-  .m-1-3 {width: 33.333333%;}
-  .m-2-3 {width: 66.666666%;}
-  .m-1-4 {width: 25%;}
-  .m-3-4 {width: 75%;}
-  .hide-m-and-below {display: none;visibility: hidden;}
-  .show-m-and-below {display: block;visibility: visible;}
+  .col-m-full {width: 100%;}
+  .col-m-1-2, .m-2-4 {width: 50%;}
+  .col-m-1-3 {width: 33.333333%;}
+  .col-m-2-3 {width: 66.666666%;}
+  .col-m-1-4 {width: 25%;}
+  .col-m-3-4 {width: 75%;}
+  .col-hide-m-and-below {display: none;visibility: hidden;}
+  .col- Sshow-m-and-below {display: block;visibility: visible;}
 }
 @media (max-width: 45em) and (min-width: 30em) {
   .hide-on-m {display: none;visibility: hidden;}
