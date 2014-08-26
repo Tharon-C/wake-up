@@ -156,20 +156,32 @@ footer items
 =================================================================== */
 .footer-items {
   background: #151515;
-  padding: 25px 0;
+  padding: 15px 0;
   border-top: solid 1px #F2F2F2;
   color: #525252; }
   .footer-items ul {
     padding-left: 0; }
   .footer-items .widget_nav_menu {
-    width: 33.3%;
-    float: left;
-    border-right: solid 1px #c2c2c2;
-    padding-left: 35px; }
-    @media (max-width: 45em) {
-      .footer-items .widget_nav_menu {
-        float: none;
-        width: 90%; } }
+    padding: 0;
+    display: block;
+    position: relative;
+    z-index: 10; }
+    .footer-items .widget_nav_menu ul {
+      margin: auto;
+      padding: 0;
+      display: table; }
+    .footer-items .widget_nav_menu li {
+      float: right;
+      position: relative;
+      display: table;
+      margin-left: -4px; }
+      .footer-items .widget_nav_menu li a {
+        display: block;
+        color: white;
+        padding: 5px 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+        position: relative; }
   .footer-items .widget_text {
     padding-left: 36px;
     width: 33.3%;

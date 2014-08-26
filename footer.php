@@ -2,7 +2,7 @@
             <div class="footer-items footer-1">
                 <div class="page-wrapper clear">
                    
-					<?php dynamic_sidebar('widget-area-2'); ?>
+					<?php dynamic_sidebar('footer-items'); ?>
 				</div>
 			</div>
 

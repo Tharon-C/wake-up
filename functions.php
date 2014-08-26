@@ -255,7 +255,7 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 
-      // Define Sidebar 1
+      // Define Home 1
     register_sidebar(array(
         'name' => __('home-1', 'html5blank'),
         'description' => __('First row on home page', 'html5blank'),
@@ -266,7 +266,7 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 
-   // Define Sidebar 1
+   // Define Page Bottom
     register_sidebar(array(
         'name' => __('page-bottom', 'html5blank'),
         'description' => __('Bottom of page contact form', 'html5blank'),
@@ -277,6 +277,16 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 
+ // Define Footer Items
+    register_sidebar(array(
+        'name' => __('footer-items', 'html5blank'),
+        'description' => __('Bottom of page contact form', 'html5blank'),
+        'id' => 'footer-items',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
 }
 
 
