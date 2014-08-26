@@ -3,11 +3,14 @@
 Template Name: Home state
 */ ?>
 
-	<main role="main">
-		<!-- section -->
-	<div class="page-wrapper">	
-
-		<section class="col-3-4 p-l">
+	<main role="main wrapper">
+	<section>	
+	<div class="page-wrapper clear">	
+		<?php dynamic_sidebar('home-1'); ?>
+	</div>
+	</section>
+	<div class="page-wrapper clear">
+		<section class="clear col-3-4 p-l">
 
             <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -36,13 +39,16 @@ Template Name: Home state
 			<!-- /article -->
 
 		<?php endif; ?>
-
+		<div class="color-4 marg-s-30px marg-b-30px pad-20px">
+			<?php dynamic_sidebar('page-bottom'); ?>
+		</div>
 		</section>
-		<!-- /section -->
-		<aside class="col-1-4 p-r">
+		
+		<aside class="sidebar col-1-4 p-r pad-s-30px">
 			<?php dynamic_sidebar('sidebar-1'); ?>
-		</aside>
+		</aside> 
 	</div>
+
 	</main>
 
 <?php get_footer(); ?>

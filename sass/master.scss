@@ -10,8 +10,9 @@ $color-3:#AE2222;
 $color-4:#CED8FE;
 $color-5:#7C90A4;
 $color-6:#F1EABF;
-$border-1: .1em solid #CBCBCB;
-$shadow-1:1px 1px 2px rgba(0, 0, 0, 0.41);
+$color-7: linear-gradient(to bottom, #efefef 44%,#efefef 44%,#9b9b9b 100%);
+$border-1: 1px solid #CBCBCB;
+$shadow-1:1px 1px 2px rgba(0, 1, 1, 0.8);
 
 body {
   background:black;
@@ -32,6 +33,7 @@ a {
 .page-wrapper, .p-wrap {
   position:relative;
   margin: auto;
+  min-width:1100px;
   max-width: 1200px;
   width: 100%;
   padding-right:20px;
@@ -114,21 +116,36 @@ nav
     display:none;
     a{
       padding:10px;
-      width:300px
+    width:150px;
       }
     }
   }
 
+ 
+
+.nav ul.sub-menu li{
+  background:#333333;
+display:inline-block;
+border-bottom:1px #808080 solid;
+}
+
+.nav ul.sub-menu li a:hover{
+ background:black;
+}
+
+
 .nav ul li:hover > ul.sub-menu {
-display:block;
-z-index:99;
+display:table;
+width:100%;
+z-index:3;
 position:absolute;
-top:30px;
-margin:0px 0px 0px -16px;
+top:50px;
+margin:0px;
 padding:0px;
-border:1px #808080 solid;
-background-color:#fff;
-width:300px;
+background:$color-2;
+ -moz-box-shadow: 0px 3px 11px -3px rgba(0, 0, 0, 0.4);    
+    -webkit-box-shadow: 0px 3px 11px -3px rgba(0, 0, 0, 0.4);    
+    box-shadow: 0px 5px 11px -3px rgba(0, 0, 0, 0.4);
 }
 
 .current_page_item a {
@@ -140,16 +157,21 @@ banner
 ===============================================================*/
 
 .banner {
-  background:url('../img/banner-1-bkg.png') no-repeat 65px 0, $color-1;
-height: 400px;
+  background:url('../img/banner-1-bkg.png') no-repeat center, $color-1;
+  height: 400px;
+}
+
+.slide-1 {
+   height: 400px;
+  position:relative;
 }
 
 .banner-img {
-width: 67%;
-float: right;
-position: absolute;
-top: 109px;
-left: 380px;
+  width: 800px;
+  float: right;
+  position: absolute;
+  bottom:0px;
+  left: 380px;
 }
 
 .banner-txt-1 {
@@ -163,8 +185,8 @@ left: 380px;
   line-height: 1em;
   font-family:$font-3;
   font-weight: 800;
-font-size:66px;
-text-transform:uppercase;
+  font-size:66px;
+  text-transform:uppercase;
 }
 
 .banner-txt-1 .line-2 {
@@ -172,8 +194,8 @@ text-transform:uppercase;
   color:$color-3;
   font-family:$font-1;
   font-weight: 800;
-font-size:22px;
-text-transform:uppercase;
+  font-size:22px;
+  text-transform:uppercase;
 }
 
 
@@ -225,6 +247,24 @@ footer {
     color: $color-3;
   }
 }
+
+/* ==========================================================================
+   =CONTENT
+   ========================================================================== */
+.sidebar .widget_text {
+  border:$border-1;
+  padding:10px;
+}
+
+
+
+// Home section 1
+
+.box-1 .the-guys {
+  position:absolute;
+  bottom:0;
+}
+
 
 /* ==========================================================================
    =COLOR
@@ -313,28 +353,50 @@ footer {
 }
 
 .social-face {
+  color:$grey-3;
   display: block;
   font-size:20px;
   border-radius: 900px;
+  padding:10px 14px 10px 18px;
+  border:$border-1;
+ 
+}
+
+.social-face:hover {
   background:#16659B;
-  padding:10px 15px;
+  color:white;
+  border:1px solid rgba(1, 1, 1, 0);
 }
 
 .social-twit {
+  color:$grey-3;
   display:block;
   font-size:20px;
   border-radius: 900px;
+  padding:10px 9px 10px 13px;
+  border:$border-1;
+}
+
+.social-twit:hover {
+  border:1px solid rgba(1, 1, 1, 0);
   background:#77CAEF;
-  padding:10px 11px;
+  color:white;
 }
 
 .social-tube {
+  color:$grey-3;
   display:block;
   font-size:20px;
   border-radius: 900px;
-  background:#E8634A;
-  padding:10px;
+  border:$border-1;
+  padding:10px 9px 10px 13px;
 }
+
+.social-tube:hover {
+  border:1px solid rgba(1, 1, 1, 0);
+  background:#E8634A;
+  color:white;
+} 
 
 /* ==========================================================================
    = User input
@@ -347,8 +409,8 @@ input, textarea {
   /* Use for styling text based form elements, like name, email, password. 
   Button/submit specific styles below, those will override */
   display: block;
-  padding: .5em;
-  margin-bottom: .75em;
+  padding: .4em;
+  margin-bottom: .7em;
   border: $border-1;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -372,7 +434,7 @@ input[type='button'], input[type='submit'], button, .button {
   background: transparent;
   line-height: 1;
   cursor: pointer;
-  padding: 1em 1.5em;
+  padding: .7em 1.5em;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -385,24 +447,25 @@ input[type='button'], input[type='submit'], button, .button {
 
 .btn-1 {
   color: $grey-1;
-  background: $color-3;
+  background: $color-3 !important;
 }
 .btn-1:hover {
-  background: #6F1616;
+  background: #851A1A !important;
 }
 .btn-1:focus, .btn-primary:active {
-  background: $color-2;
+  background: $color-3;
 }
 
 .btn-2 {
    color: black;
-  background: $color-4;
+  background: $grey-3;
 }
 .btn-2:hover {
-  background: $color-4;
+  background: black;
+  color:white;
 }
 .btn-2:focus, .btn-secondary:active {
-  background: $color-4;
+  background: $grey-3;
 }
 
 .btn-3 {
@@ -410,10 +473,29 @@ input[type='button'], input[type='submit'], button, .button {
   border:$border-1;
 }
 .btn-3:hover {
-  background: $color-3;
+  background: $grey-3;
 }
 .btn-3:focus, .btn-tertiary:active {
-  background: $color-3;
+  background: $grey-3;
+}
+
+
+.form-btn-1 {
+  margin-top:-12px;
+}
+/* ==========================================================================
+   =objects
+   ========================================================================== */
+.box-1 {
+  position:relative;
+  background:$color-7;
+  height:240px;
+}
+
+.img-1 {
+  padding:10px;
+  background:$grey-3;
+  box-shadow:$shadow-1;
 }
 
 /* ==========================================================================
@@ -439,11 +521,6 @@ input[type='button'], input[type='submit'], button, .button {
 /* =========================================================================
    =objects
    ========================================================================= */
-.img-1 {
-  padding:10px;
-  background:$grey-3;
-  box-shadow:$shadow-1;
-}
 
 
 

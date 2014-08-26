@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main role="main clear">
 		<!-- section -->
-	<div class="page-wrapper">	
+	<div class="page-wrapper pad-tb-30px clear">	
 
 		<section class="col-3-4 p-l">
 
@@ -33,12 +33,15 @@
 			<!-- /article -->
 
 		<?php endif; ?>
+		<div class="color-4 marg-s-30px marg-b-30px pad-20px">
+			<?php dynamic_sidebar('page-bottom'); ?>
+		</div>
 
 		</section>
 		<!-- /section -->
-		<aside class="col-1-4 p-r">
+		<aside class="sidebar col-1-4 p-r pad-s-30px">
 			<?php dynamic_sidebar('sidebar-1'); ?>
-		</aside>
+		</aside> 
 	</div>
 	</main>
 

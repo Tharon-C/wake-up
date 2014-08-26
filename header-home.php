@@ -59,7 +59,7 @@
 					</nav>
 					<!-- /nav -->
 					<section class="banner clear">
-					<div class="page-wrapper">
+					<div class="page-wrapper slide-1 clear">
 						<div class="banner-txt-1 txt-c">
 							<span class="line-1">Radio With A Mission</span><br>
 							<span class="line-2"> Interviews • Reviews • Polotics • Arts • Entertainment</span>

@@ -225,7 +225,7 @@ if (function_exists('register_sidebar'))
     // Define Sidebar Top Left
     register_sidebar(array(
         'name' => __('top-l', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'description' => __('Top left area, contact social etc', 'html5blank'),
         'id' => 'top-l',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -236,7 +236,7 @@ if (function_exists('register_sidebar'))
     // Define Sidebar Top Right
     register_sidebar(array(
         'name' => __('top-r', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'description' => __('Top right area, contact social etc', 'html5blank'),
         'id' => 'top-r',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -247,7 +247,7 @@ if (function_exists('register_sidebar'))
      // Define Sidebar 1
     register_sidebar(array(
         'name' => __('sidebar-1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'description' => __('Primary sidebar', 'html5blank'),
         'id' => 'sidebar-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -255,6 +255,27 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 
+      // Define Sidebar 1
+    register_sidebar(array(
+        'name' => __('home-1', 'html5blank'),
+        'description' => __('First row on home page', 'html5blank'),
+        'id' => 'home-1',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+   // Define Sidebar 1
+    register_sidebar(array(
+        'name' => __('page-bottom', 'html5blank'),
+        'description' => __('Bottom of page contact form', 'html5blank'),
+        'id' => 'page-bottom',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
 
 }
 
