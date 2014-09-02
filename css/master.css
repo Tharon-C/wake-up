@@ -234,7 +234,7 @@ footer {
   background: #AE2222; }
 
 .color-4 {
-  background: #CED8FE; }
+  background: #D4E2F5; }
 
 .color-5 {
   background: #7C90A4; }
@@ -249,6 +249,8 @@ footer {
   z-index: 2;
   margin-left: -24px;
   padding: 5px 24px;
+  height: 36px;
+  line-height: 1.4em;
   text-transform: uppercase;
   color: white;
   display: block;

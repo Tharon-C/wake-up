@@ -7,7 +7,7 @@ $grey-3:lightgrey;
 $color-1:linear-gradient(to bottom, #fafafb 0%,#ced8fe 100%);
 $color-2:linear-gradient(to bottom, #5f5f5f 0%,#000000 38%,#000000 38%);
 $color-3:#AE2222;
-$color-4:#CED8FE;
+$color-4:#D4E2F5;
 $color-5:#7C90A4;
 $color-6:#F1EABF;
 $color-7: linear-gradient(to bottom, #efefef 44%,#efefef 44%,#9b9b9b 100%);
@@ -326,6 +326,8 @@ footer {
   z-index:2;
   margin-left:-24px;
   padding:5px 24px;
+  height: 36px;
+  line-height: 1.4em;
   text-transform: uppercase;
   color:white;
   display:block;
